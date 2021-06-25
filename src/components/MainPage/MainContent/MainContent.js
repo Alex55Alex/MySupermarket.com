@@ -1,6 +1,6 @@
 import React from 'react';
 import Navigation from "./Navigation/Navigation";
-import Cards from "./Cards/cards";
+import Cards from "./Cards/Cards";
 const MainContent = (props) => {
     return(
         <div>

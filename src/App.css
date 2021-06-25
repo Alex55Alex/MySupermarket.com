@@ -3,6 +3,14 @@
     font-family: "Lato";
     src: url("../src/fonts/Lato/Lato-Bold.ttf");
 }
+@font-face {
+    font-family: "Lato";
+    src: url("../src/fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: "Sans_Caption";
+    src: url("../src/fonts/PT_Sans_Caption/PTSansCaption-Bold.ttf");
+}
 body {
     width: 100%;
 }
