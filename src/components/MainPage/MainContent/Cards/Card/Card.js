@@ -19,8 +19,7 @@ const Card = (props) => {
                 <span>{props.price}</span>
             </div>
             <div className={s.cardCount}>
-                <button onClick={() => console.log("btn")} className={s.myBtn}>Add</button>
-            </div>
+                <button onClick={() => console.log("btn")} className={`${s.myBtn} ${s.buttonPrimary}`}>Add</button>            </div>
 
         </div>
     )

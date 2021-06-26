@@ -1,7 +1,17 @@
+.buttonPrimary {
+    font-style: normal;
+    color: white;
+    background: #346AD3;
+    border: none;
+    cursor: pointer;
+}
 header {
-    min-width: 1224px;
     background:#F2F2F2;
     padding: 24px 108px;
+}
+.headerContainer {
+    max-width: 1224px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -17,7 +27,8 @@ header {
     background: #FFFFFF;
     border: 2px solid rgba(51, 51, 51, 0.15);
     box-sizing: border-box;
-    border-radius: 4px;height: 48px;
+    border-radius: 4px;
+    text-align: center;
 }
 .headerInput input::placeholder {
     text-align: center;
@@ -30,16 +41,23 @@ header {
     left: 0;
     right: 0;
 }
+.headerInput input:focus::placeholder {
+    color: transparent;
+    border: none;
+}
 .headerInput button {
     position: absolute;
     width: 88px;
     height: 48px;
     left: 304px;
-    background: #346AD3;
-    color: #FFFFFF;
+    font-size: 16px;
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
     border: none;
+    transition-duration: 1s;
+}
+.headerInput button:hover {
+    background: #318CE7;
 }
 .headerBucket {
     width: 112px;

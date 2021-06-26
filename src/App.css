@@ -3,14 +3,28 @@
     font-family: "Lato";
     src: url("../src/fonts/Lato/Lato-Bold.ttf");
 }
+@font-face {
+    font-family: "Lato-regular";
+    src: url("../src/fonts/Lato/Lato-Regular.ttf");
+}
+html {
+    height: 100%;
+}
 body {
-    width: 100%;
+    min-height: 100%;
+    position: relative;
 }
 * {
     box-sizing: border-box;
     font-family: Lato;
+    color: #333333;
+}
+*:focus {
+    outline: none;
 }
 main {
-    min-width: 1224px;
-    padding: 0 108px;
+    max-width: 1440px;
+    padding: 0 108px 143px 108px;
+    margin: 0 auto;
+    min-height: 100%;
 }

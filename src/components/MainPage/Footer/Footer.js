@@ -3,7 +3,10 @@ import s from './Footer.module.css'
 const Footer = () => {
     return(
         <footer className={s.footer}>
-            © Mysupermarket.com 2020 — 2021
+            <div className={s.footerContainer}>
+                © Mysupermarket.com 2020 — 2021
+            </div>
+            
         </footer>
     )
 }

@@ -1,3 +1,10 @@
+.buttonPrimary {
+    font-style: normal;
+    color: white;
+    background: #346AD3;
+    border: none;
+    cursor: pointer;
+}
 .cardBlue {
     background: #EBF5FB;
 }
@@ -14,9 +21,10 @@
     position: relative;
     cursor: pointer;
     width: calc(25% - 24px);
-    margin: 0 12px;
+    margin: 24px 12px 0 12px;
     height: 472px;
     padding: 24px;
+    border-radius: 4px;
 }
 
 .card:hover {
@@ -33,13 +41,15 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     margin: 0;
-
+    letter-spacing: -0.03em;
     font-size: 18px;
 }
 
 .cardTitle p {
-    margin-top: 22px;
+    margin: 0;
+    margin-top: 5px;
     font-size: 14px;
+    font-family: Lato-regular;
     color: rgba(51, 51, 51, 0.5);
 }
 
@@ -54,21 +64,22 @@
 }
 
 .cardTitle button {
-    margin-top: 26px;
+    margin-top: 13px;
     display: inline-flex;
     padding: 8px 10px;
     background: rgba(255, 255, 255, 0.5);
     border: 1px solid #67C53B;
     box-sizing: border-box;
     border-radius: 100px;
-    margin: 0;
     cursor: pointer;
     position: relative;
     z-index: 2;
 }
 
 .cardTitle span {
+    font-family: Lato-regular;
     font-size: 14px;
+    letter-spacing: -0.03em;
     margin-left: 7px;
 }
 
@@ -78,7 +89,9 @@
     font-size: 18px;
     left: 0;
     top: 340px;
+    margin-top: 15px;
     text-align: center;
+    color: #333333;
 }
 .cardCount {
     position: absolute;
@@ -99,16 +112,16 @@
 
 .myBtn {
     width: 100%;
-    height: 48px;
-    background: #346AD3;
+    padding: 14px;
     border-radius: 4px;
-    border: none;
-    color: white;
-    cursor: pointer;
+    font-size: 16px;
     position: relative;
     z-index: 2;
+    transition-duration: 1s;
 }
-
+.myBtn:hover {
+    background: #318CE7;
+}
 .minus, .plus {
     width: 48px;
     height: 48px;
@@ -117,7 +130,6 @@
     color: rgba(51, 51, 51, 0.25);
     display: inline-block;
     text-align: center;
-
     font-size: 40px;
 }
 

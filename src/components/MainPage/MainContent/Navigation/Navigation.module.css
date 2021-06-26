@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #EBEBEB;
-    padding: 24px 0;
+    padding: 31px 0 22px 0;
 }
 .breadcrumb li a {
     padding: 0;
@@ -15,8 +15,10 @@
 .breadcrumb {
     display: flex;
     flex-direction: row;
+    margin: 0;
     padding: 0;
     list-style-type: none;
+    letter-spacing: -0.02em;
 }
 .breadcrumb li:not(:first-child) {
     margin-left: 10px;
@@ -32,10 +34,22 @@
 .sort a {
     margin-left: 18px;
     color: #4A81EB;
-    padding-bottom: 10px;
+    display: inline-block;
     text-decoration: none;
+}
+.sort a::after {
+    content: '';
+    display: block;
+    margin-top: 5px;
+    width: 0;
+    height: 2px;
+    background: #4A81EB;
+    transition: width .3s;
 }
 .sort a:hover {
     color: black;
-    border-bottom: 1px solid #4A81EB;
+}
+.sort a:hover::after {
+    width: 100%;
+    transition: width .7s;
 }
